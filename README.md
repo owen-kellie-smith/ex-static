@@ -21,15 +21,17 @@ The site updates automatically within a minute or two.
 1. Raise an [issue](https://github.com/owen-kellie-smith/ex-static/issues) i.e. describe what you want, or
 2. Fork the repo (make a copy that you control)
 3. Edit the fork.
-4. Render the fork by running (in your repo root directory)
+4. Render the fork by creating a page (Settings -> Pages) running from your repo's root directory
+5. Create a pull request (that your changes be incorporated into the main site).
+
+**How to render the site on command line:**
 
 `jekyll serve`
 
-and then browsing to
+and then browse to
 
 `http://localhost:4000`
 
-5. Create a pull request (that your changes be incorporated into the main site).
 
 ---
 
