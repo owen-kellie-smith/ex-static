@@ -5,11 +5,7 @@ title: About
 
 # About
 
-EX Music Summer School (formerly **Exmouth Music Centre Summer School**) was founded in 2014.
+The EX Music Summer School (formally Exmouth Music Centre Summer School) was founded in 2014 and takes place in August every year. 
+It brings musicians together from all over the country to form two bands: An advanced Symphonic Wind Band and an Intermediate Concert Band.
 
-Each August musicians from across the country come together to form two ensembles:
-
-- **Advanced Symphonic Wind Band**
-- **Intermediate Concert Band**
-
-In addition to the bands, the summer school also runs a **conducting course** for musicians who wish to develop their conducting skills.
+In addition to the two bands we also run a Conducting Course.
