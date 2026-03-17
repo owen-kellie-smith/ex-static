@@ -1,82 +1,137 @@
 /* EX Summer school – plain static styles */
 
 /* ===== Base Layout ===== */
+
+html {
+  background: #111;
+}
+
+
+
 body {
-font-family: Arial, sans-serif;
-line-height: 1.6;
-color: #333;
-background: #fff;
-margin: 0;
-padding: 0;
-text-align: left; /* Force all text to align left by default */
+  font-family: helvetica-w01-light,helvetica-w02-light,sans-serif;
+  line-height: 1.7;
+  color: #ddd;
+  background: #111;
+  margin: 0;
+  padding: 0;
+  letter-spacing: 0.03em;
 }
 
 .container {
-max-width: 900px;
-margin: 0 auto;
-padding: 20px;
-text-align: left;
+  max-width: 980px;
+  margin: 60px auto;
+  padding: 20px;
 }
-
 /* ===== Headings ===== */
-h1, h2, h3 {
-font-weight: 600;
-color: #222;
-margin: 1em 0 0.5em;
-text-align: left;
-}
 
 h1 {
-font-size: 2rem;
+  font-size: 2.2rem;
+  text-align: center;
 }
 
 h2 {
-font-size: 1.5rem;
+  font-size: 1.45rem;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 4px;
 }
 
 h3 {
-font-size: 1.25rem;
+  font-size: 1.2rem;
 }
 
+h1, h2, h3 {
+  font-weight: normal;
+  color: #ffffff;
+  margin-top: 1.8em;
+}
+
+h2 {
+  border-bottom: 1px solid #333;
+  padding-bottom: 4px;
+}
+/* ===== Header ===== */
+
+
+.site-header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.site-header h1 {
+  font-size: 2.4rem;
+  font-weight: normal;
+  margin-bottom: 10px;
+}
+
+.site-header h1 a {
+  color: #ffffff;
+  text-decoration: none;
+}
+/* ===== Navigation ===== */
+
+
+nav li {
+  margin: 0;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 15px 0 0;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 18px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #bbbbbb;
+  font-size: 0.95rem;
+  letter-spacing: 0.04em;
+}
+
+nav a:hover {
+  color: #ffffff;
+}
 /* ===== Tables ===== */
+
 table {
-width: 100%;
-border-collapse: collapse;
-margin: 20px 0;
-text-align: left;
+  width: 100%;
+  border-collapse: collapse;
+  margin: 25px 0;
 }
 
 th, td {
-border: 1px solid #ccc;
-padding: 10px;
-text-align: left; /* Force table cells to left-align */
+  border: 1px solid #333;
+  padding: 8px 10px;
 }
 
 th {
-background: #f8f8f8;
-font-weight: bold;
+  background: #1b1b1b;
+  color: #ffffff;
 }
-
 /* ===== Quotes ===== */
+
 blockquote {
-border-left: 4px solid #ccc;
+border-left: 4px solid #555;
 margin: 1.5em 0;
 padding: 0.5em 1em;
-background: #f9f9f9;
-color: #555;
-text-align: left;
+background: #1a1a1a;
+color: #ccc;
 }
 
 /* ===== Links ===== */
+
 a {
-color: #0066cc;
-text-decoration: none;
+  color: #7aa7ff;
+  text-decoration: none;
 }
 
 a:hover {
-text-decoration: underline;
+  text-decoration: underline;
 }
-
 /* ── Images ── */
 img {
   max-width: 100%;
@@ -138,12 +193,23 @@ img {
     grid-column: span 2;
     grid-row: span 2;
   }
+.container {
+  max-width: 75%;
+  margin: 40px auto;
+  padding: 10px;
+}
 }
 
 
 @media (max-width: 600px) {
 body {
 padding: 10px;
+}
+
+.container {
+  max-width: 85%;
+  margin: 10px auto;
+  padding: 5px;
 }
 
 table, th, td {
@@ -167,3 +233,12 @@ font-size: 14px;
 
 }
 
+/* ===== Footer ===== */
+footer {
+  margin-top: 40px;
+  padding-top: 20px;
+  border-top: 1px solid #333;
+  font-size: 0.9rem;
+  color: #aaa;
+  text-align: center;
+}

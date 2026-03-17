@@ -3,11 +3,14 @@ layout: page
 title: Courses
 ---
 
-# Courses
+# Courses available
+
+{% include gallery.html size="xl" href="assets/images/grid_oboe.jpg" %}
 
 ## Symphonic Wind Band Course
 
-## August 3rd - 7th 2026
+### August 3rd - 7th 2026
+
 
 The Symphonic Wind Band Course is open to all players from Grade 5 or equivalent standard to advanced. This is  at the discretion of the Course Director. 
 
@@ -17,19 +20,23 @@ A wide repertoire of music will be carefully selected  to ensure that a variety 
 
 Players will also have the opportunity to play in smaller groups with our coaching staff.
 
+
 ## Intermediate Wind Band Course
 
-## August 3rd - 7th 2026
+### August 3rd - 7th 2026
 
-The Intermediate Wind Band Course is open to all players from Grade 3 or equivalent standard to Grade 5.  
+
+The Intermediate Wind Band Course is open to all players from Grade 3 or equivalent standard to Grade 5. 
 
 A wide repertoire of music will be carefully selected  to ensure that a variety of tastes are catered for, and our experienced conductors will support individuals to develop their musical ensemble skills. 
 
 Players will also have the opportunity to play in smaller groups with our coaching staff.
 
+{% include gallery.html size="xl" href="assets/images/grid_flute.jpg" %}
+
 ## Conducting Course
 
-## August 3rd - 7th 2026
+### August 3rd - 7th 2026
 
 A course in conducting the wind band, providing both an in-depth introduction to the art of conducting and extensive guidance for experienced conductors who want to improve.
 
@@ -40,6 +47,7 @@ Opportunities will include:
 - Podium time with one of the bands and a small ensemble. 
 - Observation of  Course Director, Duncan Stubbs rehearsing with the bands, and a variety of playing opportunities.
 
+{% include gallery.html size="xl" href="assets/images/horn.jpg" %}
 
 ## Daily Visitors (Either Band Course)
 
