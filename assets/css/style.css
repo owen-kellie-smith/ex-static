@@ -104,14 +104,11 @@ table {
 }
 
 th, td {
-  border: 1px solid #333;
+  border: none;
+/*  border: 1px solid #333; */
   padding: 8px 10px;
 }
 
-th {
-  background: #1b1b1b;
-  color: #ffffff;
-}
 /* ===== Quotes ===== */
 
 blockquote {

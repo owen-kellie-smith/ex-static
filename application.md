@@ -2,8 +2,8 @@
 layout: page
 title: application
 ---
+# Applications for 2026 NOW OPEN!
 
-[Application Form](https://docs.google.com/forms/d/e/1FAIpQLSfIBiKa762stg-2dl0JC9KBgwcAAVG6gEjPkAQ-PrXxPsuV0Q/viewform)
 
 Some sections are now on a waitlist - Intermediate Band Saxes and Symphonic Band Euph/Baritone. 
 Please contact us on [exmusicsummerschool@outlook.com](mailto:exmusicsummerschool@outlook.com) for further details.
@@ -28,6 +28,8 @@ Please contact us on [exmusicsummerschool@outlook.com](mailto:exmusicsummerschoo
 | Camping Pitch for caravan/motorhome/tent (per night, no food) | £15.00 |
 | Camping per night including food (Mon–Fri)                    | £35.00 |
 | Additional night (Sunday with breakfast Monday)               | £24.00 |
+
+[Application Form](https://docs.google.com/forms/d/e/1FAIpQLSfIBiKa762stg-2dl0JC9KBgwcAAVG6gEjPkAQ-PrXxPsuV0Q/viewform)
 
 [Bicton 3D Map](assets/pdf/map.pdf)
 
