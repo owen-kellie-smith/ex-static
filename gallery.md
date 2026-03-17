@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: gallery
 title: Contact
 ---
 
@@ -19,8 +19,4 @@ title: Contact
 </div>
 
 
-{% include gallery.html size="xl" href="assets/images/horn.jpg" %}
-
-{% include gallery.html size="xl" href="assets/images/grid_flute.jpg" %}
-{% include gallery.html size="xl" href="assets/images/grid_oboe.jpg" %}
 
