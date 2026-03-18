@@ -1,6 +1,10 @@
 ---
 layout: page
 title:
+secondary_content: |
+   > “Music ... can name the unnameable and communicate the unknowable.”  
+   > 
+   > <span class="signature">Leonard Bernstein</span>
 ---
 
 # EX Music Summer School
@@ -23,9 +27,4 @@ Applications for 2026 NOW OPEN!
 <br>
 <br>
 <br>
-<br>
-<br>
 
-> “Music ... can name the unnameable and communicate the unknowable.”  
-> 
-> <span class="signature">Leonard Bernstein</span>
