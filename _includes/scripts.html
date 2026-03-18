@@ -1,0 +1,9 @@
+<script><!-- make all external links and pdfs open in a new window -->
+document.querySelectorAll('a[href^="http"], a[href$=".pdf"]').forEach(a => {
+  a.setAttribute('target', '_blank');
+  a.setAttribute('rel', 'noopener noreferrer');
+});
+</script>
+<script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
+<script>GLightbox({ touchNavigation: true, loop: true, autoplayVideos: false });</script>
+</html>

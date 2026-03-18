@@ -1,15 +1,31 @@
 ---
 layout: page
-title: EX Music Summer School
+title:
 ---
 
 # EX Music Summer School
 
 # 3–7 August 2026
 
-If you're a musician looking for a week of music making in beautiful surroundings, this summer school offers a welcoming environment, experienced staff and a range of courses.
 
-<span class="excited"> Applications for 2026 NOW OPEN! </span>
+<br>
+<br>
 
-> “Music can name the unnameable and communicate the unknowable.”  
-> — Leonard Bernstein
+<p class="center-text"> 
+If you’re a musician looking for a week of music making in beautiful surroundings, then look no further.<br> 
+With our variety of courses, experienced staff and welcoming environment, EX Music Summer School is the place for you.
+</p>
+
+<p class="excited"> 
+Applications for 2026 NOW OPEN! 
+</p>
+  
+<br>
+<br>
+<br>
+<br>
+<br>
+
+> “Music ... can name the unnameable and communicate the unknowable.”  
+> 
+> <span class="signature">Leonard Bernstein</span>

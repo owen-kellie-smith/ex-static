@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hero Slider Example</title>
+<style>
+  body, html { margin: 0; padding: 0; font-family: sans-serif; }
+  .hero-slider {
+    position: relative;
+    width: 100%;
+    height: 500px;
+    overflow: hidden;
+  }
+
+  .slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+  }
+
+  .slide.active {
+    opacity: 1;
+    z-index: 1;
+  }
+
+  .slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .overlay-text {
+    position: absolute;
+    bottom: 20%;
+    left: 5%;
+    color: white;
+    text-shadow: 1px 1px 6px rgba(0,0,0,0.7);
+  }
+
+</style>
+</head>
+<body>
+
+<section class="hero-slider">
+  <div class="slide active">
+    <img src="assets/images/slide_baton.jpg" >
+  </div>
+  <div class="slide">
+    <img src="assets/images/slide_clarinet.jpg" >
+  </div>
+  <div class="slide">
+    <img src="assets/images/slide_sax.jpg" >
+  </div>
+  <div class="slide">
+    <img src="assets/images/slide_flute.jpg" >
+  </div>
+  <div class="slide">
+    <img src="assets/images/slide_trombone.jpg" >
+  </div>
+  <div class="slide">
+    <img src="assets/images/slide_horn.jpg" >
+  </div>
+  <div class="slide">
+    <img src="assets/images/slide_music_light.jpg" >
+  </div>
+
+</section>
+
+<script>
+const slides = document.querySelectorAll('.slide');
+let current = 0;
+
+function showSlide(index) {
+  slides.forEach((s, i) => {
+    s.classList.toggle('active', i === index);
+  });
+  current = index;
+}
+
+function nextSlide() {
+  let next = (current + 1) % slides.length;
+  showSlide(next);
+}
+setInterval(nextSlide, 5000);
+</script>
+
+</body>
+</html>

@@ -7,17 +7,11 @@
   {% include menu.html %}
   {% include hero-slide.html %}
 
-  <div class="container">
+  <div class="container-wide">
    <main>
     {{ content }}
    </main>
   </div>
-
-  <section id="secondary-content">
-    {% if page.secondary_content %}
-      {{ page.secondary_content | markdownify }}
-    {% endif %}
-  </section>
 
   {% include footer.html %}
 </body>

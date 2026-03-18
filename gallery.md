@@ -1,6 +1,6 @@
 ---
-layout: gallery
-title: Contact
+layout: page-gallery
+title: gallery
 ---
 
 <div class="gallery">

@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Location
+title: location
 ---
 
 # Bicton College

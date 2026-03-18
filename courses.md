@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Courses
+title: courses
 ---
 
 # Courses available

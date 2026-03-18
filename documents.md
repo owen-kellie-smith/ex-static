@@ -1,9 +1,12 @@
 ---
 layout: page
-title: application
+title: documents
 ---
 # Applications for 2026 NOW OPEN!
 
+<p class="center-text">
+<a href="https://docs.google.com/forms/d/e/1FAIpQLSfIBiKa762stg-2dl0JC9KBgwcAAVG6gEjPkAQ-PrXxPsuV0Q/viewform" class="btn-link">Application Form</a>
+</p>
 
 Some sections are now on a waitlist - Intermediate Band Saxes and Symphonic Band Euph/Baritone. 
 Please contact us on [exmusicsummerschool@outlook.com](mailto:exmusicsummerschool@outlook.com) for further details.
@@ -29,10 +32,9 @@ Please contact us on [exmusicsummerschool@outlook.com](mailto:exmusicsummerschoo
 | Camping per night including food (Mon–Fri)                    | £35.00 |
 | Additional night (Sunday with breakfast Monday)               | £24.00 |
 
-[Application Form](https://docs.google.com/forms/d/e/1FAIpQLSfIBiKa762stg-2dl0JC9KBgwcAAVG6gEjPkAQ-PrXxPsuV0Q/viewform)
 
-[Bicton 3D Map](assets/pdf/map.pdf)
+<a href="assets/pdf/map.pdf" class="btn-link">Bicton 3D Map</a>
 
-[Privacy Policy](assets/pdf/privacy.pdf)
+<a href="assets/pdf/privacy.pdf" class="btn-link">Privacy Policy</a>
 
-[Safeguarding and Child Protection Policy](assets/pdf/safe.pdf)
+<a href="assets/pdf/safe.pdf" class = "btn-link">Safeguarding and Child Protection Policy</a>
