@@ -4,7 +4,7 @@ title: about
 ---
 
 
-<div class="split-section left-text">
+<div class="split-section overlap left-text">
   <div class="text-content">
     <h1>About Us</h1>
     <br>
