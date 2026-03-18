@@ -1,26 +1,21 @@
-<script>
-// make all external links and pdfs open in a new window 
-document.querySelectorAll('a[href^="http"]:not(.glightbox), a[href$=".pdf"]:not(.glightbox)').forEach(a => {
-  a.setAttribute('target', '_blank');
-  a.setAttribute('rel', 'noopener noreferrer');
-});
-</script>
 
 <script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
 
 <script>
-function initLightbox() {
+document.addEventListener("DOMContentLoaded", function() {
+  // initialize GLightbox first
   GLightbox({
     selector: '.glightbox',
     touchNavigation: true,
     loop: true,
     autoplayVideos: false
   });
-}
 
-if (document.readyState === "loading") {
-  document.addEventListener("DOMContentLoaded", initLightbox);
-} else {
-  initLightbox();
-}
+  // then adjust external links, making sure we don't touch .glightbox
+  document.querySelectorAll('a[href^="http"]:not([href*="github.io"]):not(.glightbox), a[href$=".pdf"]:not(.glightbox)').forEach(a => {
+    a.setAttribute('target', '_blank');
+    a.setAttribute('rel', 'noopener noreferrer');
+  });
+});
+</script>
 </script>
