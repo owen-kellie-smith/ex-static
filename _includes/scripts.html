@@ -6,13 +6,19 @@ document.querySelectorAll('a[href^="http"]:not(.glightbox), a[href$=".pdf"]:not(
 </script>
 <script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
 <script>
-document.addEventListener("DOMContentLoaded", function () {
-  const lightbox = GLightbox({
+function initLightbox() {
+  GLightbox({
     selector: '.glightbox',
     touchNavigation: true,
     loop: true,
     autoplayVideos: false
   });
-});
+}
+
+if (document.readyState === "loading") {
+  document.addEventListener("DOMContentLoaded", initLightbox);
+} else {
+  initLightbox();
+}
 </script>
 </html>
