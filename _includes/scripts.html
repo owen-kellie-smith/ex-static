@@ -5,5 +5,14 @@ document.querySelectorAll('a[href^="http"], a[href$=".pdf"]').forEach(a => {
 });
 </script>
 <script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
-<script>GLightbox({ touchNavigation: true, loop: true, autoplayVideos: false });</script>
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  const lightbox = GLightbox({
+    selector: '.glightbox',
+    touchNavigation: true,
+    loop: true,
+    autoplayVideos: false
+  });
+});
+</script>
 </html>
