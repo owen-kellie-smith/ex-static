@@ -1,5 +1,5 @@
 <script><!-- make all external links and pdfs open in a new window -->
-document.querySelectorAll('a[href^="http"], a[href$=".pdf"]').forEach(a => {
+document.querySelectorAll('a[href^="http"]:not(.glightbox), a[href$=".pdf"]:not(.glightbox)').forEach(a => {
   a.setAttribute('target', '_blank');
   a.setAttribute('rel', 'noopener noreferrer');
 });

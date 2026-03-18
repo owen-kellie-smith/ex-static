@@ -84,8 +84,8 @@ function nextSlide() {
   let next = (current + 1) % slides.length;
   showSlide(next);
 }
-// 👇 IMPORTANT: initialize with saved slide
-nextSlide(current);
+// initialize with next slide to mark page refresh
+nextSlide();
 
 setInterval(nextSlide, 5000);
 </script>
