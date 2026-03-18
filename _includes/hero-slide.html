@@ -46,10 +46,10 @@
     <img src="https://cdn.jsdelivr.net/gh/owen-kellie-smith/ex-static@v0.0.6/assets/images/slide_clarinet.jpg" >
   </div>
   <div class="slide">
-    <img src="ahttps://cdn.jsdelivr.net/gh/owen-kellie-smith/ex-static@v0.0.6/assets/images/slide_sax.jpg" >
+    <img src="https://cdn.jsdelivr.net/gh/owen-kellie-smith/ex-static@v0.0.6/assets/images/slide_sax.jpg" >
   </div>
   <div class="slide">
-    <img src="ahttps://cdn.jsdelivr.net/gh/owen-kellie-smith/ex-static@v0.0.6/assets/images/slide_flute.jpg" >
+    <img src="https://cdn.jsdelivr.net/gh/owen-kellie-smith/ex-static@v0.0.6/assets/images/slide_flute.jpg" >
   </div>
   <div class="slide">
     <img src="https://cdn.jsdelivr.net/gh/owen-kellie-smith/ex-static@v0.0.6/assets/images/slide_trombone.jpg" >
@@ -77,6 +77,7 @@ function showSlide(index) {
 
   // Save to localStorage
   localStorage.setItem('heroSlide', current);
+  preloadNextSlide();
 
 }
 
@@ -88,5 +89,14 @@ function nextSlide() {
 nextSlide();
 
 setInterval(nextSlide, 5000);
+
+function preloadNextSlide() {
+    const nextIndex = (current + 1) % slides.length;
+    const nextSlide = slides[nextIndex];
+    const img = nextSlide.querySelector('img');
+    if (img && img.loading === 'lazy') {
+        img.loading = 'eager'; // Forces browser to fetch immediately
+    }
+}
 </script>
 
