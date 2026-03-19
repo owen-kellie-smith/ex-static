@@ -6,35 +6,38 @@ title: contact
 <div class="split-section left-text">
   <div class="text-content">
 
-# Contact
+    <h1>Contact</h1>
 
-EX Music Summer School  
-29 Willow Avenue  
-Exmouth  
-Devon  
-EX8 4QS
+    <p>29 Willow Avenue, Exmouth,  Devon,  EX8 4QS</p>
 
-Email: exmusicsummerschool@outlook.com  
-Phone: 07810 806627
+    <p><a href="mailto:exmusicsummerschool@outlook.com">exmusicsummerschool@outlook.com</a></p>  
+    <p>07810 806627</p>
 
   </div>
   <div class="image-content">
 
-<form action="https://submit-form.com/kPsf5Hhzq">
-  <label for="name">Name</label>
-  <input type="text" id="name" name="name" placeholder="Name" required="" />
-  <label for="email">Email</label>
-  <input type="email" id="email" name="email" placeholder="Email" required="" />
-  <label for="message">Message</label>
-  <textarea
-    id="message"
-    name="message"
-    placeholder="Message"
-    required=""
-  ></textarea>
-  <button type="submit">Send</button>
-</form>
+    <form action="https://submit-form.com/kPsf5Hhzq">
+      <p>
+      	<input type="text" id="name" name="name" placeholder="Name" required="" />
+      </p>
+      <p>
+        <input type="text" id="address" name="addess" placeholder="Address" required="" />
+      </p>
+      <p>
+         <input type="email" id="email" name="email" placeholder="Email" required="" />
+      </p>
+      <p>
+        <textarea
+	        id="message"
+	        name="message"
+	        placeholder="Type your message here ..."
+	        required=""
+        ></textarea>
+      </p>
+      <p>
+        <button type="submit">Submit</button>
+      </p>
+      </form>
 
   </div>
 </div>
-

@@ -225,6 +225,55 @@ a.btn-link:active {
   transform: scale(0.98);
 }
 
+/* ===== Forms  ===== */
+  form {
+    width: 100%;
+    max-width: none; 
+    margin: 0 auto;   /* center form horizontally */
+    font-family: sans-serif;
+  }
+
+  form p {
+    margin-bottom: 15px; /* spacing between fields */
+  }
+
+  input[type="text"],
+  input[type="email"],
+  textarea {
+    width: 100%;           /* make all inputs full width */
+    padding: 10px;         /* add some padding inside */
+    background-color: transparent; /* input background same as page bg */
+    color: white;          /* text color */
+    border: 1px solid #555; /* subtle border to see edges */
+    border-radius: 4px;
+    box-sizing: border-box; /* ensure padding doesn't break width */
+  }
+
+  textarea {
+    resize: vertical;      /* allow vertical resizing */
+    min-height: 100px;     /* optional: height for textarea */
+  }
+
+  button {
+    width: 100%;           /* make button same width as inputs */
+    padding: 10px;
+    background-color: white; 
+    color: black;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+
+  button:hover {
+    background-color: #ddd; /* simple hover effect */
+  }
+
+  /* Optional: placeholder styling */
+  ::placeholder {
+    color: #aaa;
+  }
+
 /* ===== Tables ===== */
 
 table {
