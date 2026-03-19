@@ -379,7 +379,7 @@ blockquote .signature {
   .split-section.overlap .image-content {
     position: absolute;
     top: 0;
-    left: 0;
+    left: -30px;
     height: 100%;
   }
 
