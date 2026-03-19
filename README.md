@@ -56,3 +56,6 @@ _includes		- Header and footer
 4. Site goes live at `https://<username>.github.io/<repo>/` ie in this case at `https://owen-kellie-smith.github.io/ex-static/`
 
 
+## Cloudflare settings
+
+See https://github.com/owen-kellie-smith/etcb-website?tab=readme-ov-file#cloudflare-settings
