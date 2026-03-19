@@ -4,6 +4,7 @@ Plain static HTML site served via GitHub Pages using Jekyll.
 
 https://owen-kellie-smith.github.io/ex-static/
 
+**Similar repos** https://owen-kellie-smith.github.io/static-websites
 
 ---
 
