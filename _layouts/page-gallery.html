@@ -1,19 +1,16 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  {% include head.html %}
-</head>
-<body>
-  {% include menu.html %}
-  {% include hero-slide.html %}
+  <head>
+    {% include head.html %}
+  </head>
+  <body>
+    {% include menu.html %}
 
-  <div class="container-wide">
-   <main>
-    {{ content }}
-   </main>
-  </div>
+    <div class="container-wide">
+      <main>{{ content }}</main>
+    </div>
 
-  {% include footer.html %}
-</body>
-{% include scripts.html %}
+    {% include footer.html %}
+  </body>
+  {% include scripts.html %}
 </html>

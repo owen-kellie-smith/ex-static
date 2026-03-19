@@ -1,16 +1,100 @@
 <header>
   <div class="site-header">
-    <h1><a href="{{ '/' | relative_url }}">EX Music Summer School</a></h1>
-    <nav>
-      <ul>
-        <li><a href="{{ '/' | relative_url }}">Home</a></li>
-        <li><a href="{{ '/about' | relative_url }}">About</a></li>
-        <li><a href="{{ '/location' | relative_url }}">Location</a></li>
-        <li><a href="{{ '/courses' | relative_url }}">Courses</a></li>
-        <li><a href="{{ '/contact' | relative_url }}">Contact</a></li>
-        <li><a href="{{ '/documents' | relative_url }}">Application</a></li>
-        <li><a href="{{ '/gallery' | relative_url }}">Gallery</a></li>
-      </ul>
-    </nav>
+    <h1 class="banner">
+      <a href="{{ '/' | relative_url }}">EX Music Summer School</a>
+    </h1>
+    <div class="menu-wrapper">
+      <button class="menu-toggle" aria-label="Menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <nav class="site-menu" aria-label="Main navigation">
+        <ul>
+          <li><a href="{{ '/' | relative_url }}">Home</a></li>
+          <li><a href="{{ '/about' | relative_url }}">About</a></li>
+          <li><a href="{{ '/location' | relative_url }}">Location</a></li>
+          <li><a href="{{ '/courses' | relative_url }}">Courses</a></li>
+          <li><a href="{{ '/contact' | relative_url }}">Contact</a></li>
+          <li><a href="{{ '/documents' | relative_url }}">Application</a></li>
+          <li><a href="{{ '/gallery' | relative_url }}">Gallery</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <section class="hero-slider">
+      <div class="slide">
+        <img
+          src="https://cdn.jsdelivr.net/gh/owen-kellie-smith/ex-static@v0.0.6/assets/images/slide_baton.jpg"
+        />
+      </div>
+      <div class="slide">
+        <img
+          src="https://cdn.jsdelivr.net/gh/owen-kellie-smith/ex-static@v0.0.6/assets/images/slide_clarinet.jpg"
+        />
+      </div>
+      <div class="slide">
+        <img
+          src="https://cdn.jsdelivr.net/gh/owen-kellie-smith/ex-static@v0.0.6/assets/images/slide_sax.jpg"
+        />
+      </div>
+      <div class="slide">
+        <img
+          src="https://cdn.jsdelivr.net/gh/owen-kellie-smith/ex-static@v0.0.6/assets/images/slide_flute.jpg"
+        />
+      </div>
+      <div class="slide">
+        <img
+          src="https://cdn.jsdelivr.net/gh/owen-kellie-smith/ex-static@v0.0.6/assets/images/slide_trombone.jpg"
+        />
+      </div>
+      <div class="slide">
+        <img
+          src="https://cdn.jsdelivr.net/gh/owen-kellie-smith/ex-static@v0.0.6/assets/images/slide_horn.jpg"
+        />
+      </div>
+      <div class="slide">
+        <img
+          src="https://cdn.jsdelivr.net/gh/owen-kellie-smith/ex-static@v0.0.6/assets/images/slide_music_light.jpg"
+        />
+      </div>
+    </section>
+
+    <script>
+      const slides = document.querySelectorAll(".slide");
+      // Get saved slide index (default to 0)
+      let current = parseInt(localStorage.getItem("heroSlide")) || 0;
+
+      function showSlide(index) {
+        slides.forEach((s, i) => {
+          s.classList.toggle("active", i === index);
+        });
+        current = index;
+
+        // Save to localStorage
+        localStorage.setItem("heroSlide", current);
+        preloadNextSlide();
+      }
+
+      function nextSlide() {
+        let next = (current + 1) % slides.length;
+        showSlide(next);
+      }
+      // initialize with next slide to mark page refresh
+      nextSlide();
+
+      setInterval(nextSlide, 5000);
+
+      function preloadNextSlide() {
+        const nextIndex = (current + 1) % slides.length;
+        const nextSlide = slides[nextIndex];
+        const img = nextSlide.querySelector("img");
+        if (img && img.loading === "lazy") {
+          img.loading = "eager"; // Forces browser to fetch immediately
+        }
+      }
+    </script>
+
+    <div class="menu-overlay"></div>
   </div>
 </header>

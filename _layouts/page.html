@@ -1,25 +1,21 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  {% include head.html %}
-</head>
-<body>
-  {% include menu.html %}
-  {% include hero-slide.html %}
+  <head>
+    {% include head.html %}
+  </head>
+  <body>
+    {% include menu.html %}
 
-  <div class="container">
-   <main>
-    {{ content }}
-   </main>
-  </div>
+    <div class="container">
+      <main>{{ content }}</main>
+    </div>
 
-  <section id="secondary-content">
-    {% if page.secondary_content %}
-      {{ page.secondary_content | markdownify }}
-    {% endif %}
-  </section>
+    <section id="secondary-content">
+      {% if page.secondary_content %} {{ page.secondary_content | markdownify }}
+      {% endif %}
+    </section>
 
-  {% include footer.html %}
-</body>
-{% include scripts.html %}
+    {% include footer.html %}
+  </body>
+  {% include scripts.html %}
 </html>
