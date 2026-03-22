@@ -377,10 +377,7 @@ blockquote .signature {
 
 @media screen and (max-width: 768px) {
 
-.split-section.overlap .text-content {
-  color: white; /* ensure text is white on all screens */
-}
-  
+ 
   .split-section.overlap .image-content {
     position: absolute;
     top: 0;
@@ -391,7 +388,7 @@ blockquote .signature {
   .split-section.overlap .image-content img {
     height: 100%;
     object-fit: cover;
-    opacity: 0.5;
+    opacity: 1;
   }
 
   .split-section.overlap .text-content {
