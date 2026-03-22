@@ -389,6 +389,7 @@ blockquote .signature {
     height: 100%;
     object-fit: cover;
     opacity: 1;
+    z-index:0;
   }
 
   .split-section.overlap .text-content {
