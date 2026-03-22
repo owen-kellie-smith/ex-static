@@ -382,6 +382,7 @@ blockquote .signature {
   }
 
   .split-section.overlap .image-content {
+    display: none !important;
     position: absolute;
     top: 0;
     left: -30px;
