@@ -377,7 +377,10 @@ blockquote .signature {
 
 @media screen and (max-width: 768px) {
 
- 
+  .split-section.overlap {
+    position: relative; /* parent stacking context */
+  }
+
   .split-section.overlap .image-content {
     position: absolute;
     top: 0;
